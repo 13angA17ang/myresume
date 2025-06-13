@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zachary Anderson's Career Goals</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Zachary Anderson</h1>
+        <nav>
+            <ul>
+                <li> <a href="resume.html">Resume</a></li>
+                <li> <a href="cover-letter.html">Cover Letter</a></li>
+                <li> <a href="career-goals.html">Career Goals</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+    <h2>Career Goals</h2>
+    <img src="images/career-goals-image.jpg" alt="Career goals illustration" width="300">
+    <audio controls>
+        <source src="media/wgu-career-goals.mp3" type="audio/mpeg">
+    </audio>
+    <video width="320" height="240" controls>
+        <source src="media/wgu-video.mp4" type="video/mp4">
+    </video>
+    <p>I am passionate about advancing in the field of Information Technology, with a strong interest in cybersecurity,
+        network administration, and supporting secure systems for mission-driven organizations.</p>
+    <ul>
+        <li>Earn industry certifications such as CompTIA Security+ and Network+</li>
+        <li>Gain hands-on experience in IT support and systems administration</li>
+        <li>Contribute to cybersecurity initiatives that protect critical data</li>
+        <li>Advance into a leadership role in a technical team environment</li>
+    </ul>
+
+    <h3>Contact Me</h3>
+    <form method="POST" action="https://wp.zybooks.com/form-viewer.php">
+        <label for="first-name">First Name:</label>
+        <input type="text" id="first-name" name="first-name" required>
+        <label for="last-name">Last Name:</label>
+        <input type="text" id="last-name" name="last-name" required>
+        <label for="company-name">Company Name:</label>
+        <input type="text" id="company-name" name="company-name">
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone">
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+        <label for="contact-time">Best Contact Time:</label>
+        <input type="radio" id="am" name="contact-time" value="AM" required> AM
+        <input type="radio" id="pm" name="contact-time" value="PM"> PM
+        <input type="radio" id="anytime" name="contact-time" value="Anytime"> Anytime
+        <label for="contact-method">Preferred Contact Method:</label>
+        <select id="contact-method" name="contact-method">
+            <option value="phone">Phone</option>
+            <option value="email">Email</option>
+            <option value="text">Text</option>
+        </select>
+        <input type="submit" value="Submit">
+    </form>
+    </main>
+    <footer>
+        <div id="current-date">
+        </div>
+    </footer>
+    <script>
+        const dateElement = document.getElementById('current-date');
+        const currentDate = new Date().toLocaleDateString();
+        dateElement.textContent = currentDate
+    </script>
+</body>
+
+</html>
